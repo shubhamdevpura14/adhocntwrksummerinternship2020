@@ -26,8 +26,8 @@ os.system("sudo docker ps")
 #Task 2
 #Store names and created date of all containters in text file
 
-docker ps -a --format "table {{.Names}}\t{{.CreatedAt}}" > task2.txt
-cat task2.txt
+docker ps -a --format "table {{.Names}}\t{{.CreatedAt}}" > shubh.txt
+cat shubh.txt
 ###########################################################################################################################################
 
 
