@@ -1,7 +1,8 @@
 #Task 1
 #Creating 100 containers 25 each of alpine, fedora, centos, java which runs forever
 #Using Python Script
-```
+
+##############################################################################################################################################
 import os
 os.system("sudo docker pull alpine")
 os.system("sudo docker pull fedora")
@@ -18,16 +19,16 @@ for i in range(75,101):
 os.system("sudo docker ps")
 
 
-```
+########################################################################################################################################
 
 
 
 #Task 2
 #Store names and created date of all containters in text file
-```
+
 docker ps -a --format "table {{.Names}}\t{{.CreatedAt}}" > task2.txt
 cat task2.txt
-```
+###########################################################################################################################################
 
 
 #TASK 3:
@@ -41,15 +42,13 @@ answer: docker not installed locally
 
 
 
-
-
+#################################################################################################################################################
 
 
 
 
 #Task 4
 #Store name, cpu useage and memory usage of all containers in a files named "devil.txt"
-```
+
 docker stats --all --no-stream --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}" > devil.txt
-cat Ram.txt
-```
+cat devil.txt
