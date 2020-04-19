@@ -48,8 +48,8 @@ answer: docker not installed locally
 
 
 #Task 4
-#Store name, cpu useage and memory usage of all containers in a files named "Ram.txt"
+#Store name, cpu useage and memory usage of all containers in a files named "devil.txt"
 ```
-docker stats --all --no-stream --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}" > Ram.txt
+docker stats --all --no-stream --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}" > devil.txt
 cat Ram.txt
 ```
